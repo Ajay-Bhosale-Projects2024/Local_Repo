@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>    
+<head>
+    <style>
+        p{
+            color:red;
+        }
+    </style>
+    <title>Git learning</title>
+</head>
+<body>
+<p>
+    1)one of the most popular version control system.
+2)open source and fast and scalable
+3)to track to code history
+4) Collaboration (work with team, it will get easy to track, no one will override code)
+
+5)git is software and GitHub is website to allow developers to store and manage their code using git.
+6)we store it in folder form , we call it repository or repo in simple word, folder means where we can store our project and it is a repo.
+
+7)we can see another developer repository and we can modify it also
+8) https://github.com
+9) Repositories means project
+
+----------------------------------------------------------------
+
+configuring Git : konse account pr changes karan chatate hai 
+----------------
+
+git se GitHub ke upar changes : 
+
+
+git config --global.name "My Name"
+
+configuration :
+ global level and local level
+ - pure ke pure system pr using one account
+  -local level using diff account do changes in repo
+
+~ = root directory means main directory (Primary folder)
+
+Command
+--------
+1) $ git --version
+
+2) $ git config --global user.name "Ajay-Bhosale-Projects2024"
+
+3) $ git config --global user.email "ab707492@gmail.com"
+
+4) $ git config --list
+
+
+--------------------------------------
+
+Git basics commands :
+
+
+Clone and Status :
+
+Clone  : cloning a repository on our local machine
+-----     
+
+remote : GitHub (a file which on github) 
+local  : laptop of computer  (a file which on out pc)
+
+
+if we want to create clone (duplicate) form remote to local then we use
+          command :   git clone <-some link->
+
+How to create : write below command on cmd in vs code 
+-------------
+
+git clone ( https://github.com/Ajay-Bhosale-Projects2024/RamanSoft.git ) --https link took from git (web)
+
+-we have create clone in out local machine form git (remote)
+-cd command (if want to go to under folder) (ramansoft)
+- cd .. (come out from folder)
+-ls command (folder list) LS  (readme.cmd)
+-ls -a (get to hidden file also) 
+
+
+-------------------------------------------------------------------------
+
+
+status : display the state of the code (code ka status)  project me ja kr write below cmd
+-----
+       command:      git status
+
+shows :    On branch main
+           Your branch is up to date with 'origin/main'. 
+
+           (jo code git hub ke uppar ke o hi yaha hai)
+
+if we modify any file in our local machine and run the above cmd 
+-----------------------------------------------------------------
+
+1)untrack
+    -new files that git doesn't yet track
+
+2)modified
+      -changed
+
+3)staged
+     -file is ready to be committed
+
+4)unmodified
+     -unchanged
+
+then we need to do two step process 
+
+step  1)add      2)commit
+
+when we perform add cmd then this file will on staged and it is ready for commit
+when we do commit then it status will be file unchanged  means now no need to change anything
+
+
+1) add : adds new or changed files in your working directory to the                      git staging are
+     
+cmd :  git add<-filename->
+       git add index.html    --single file
+       git add .              -- all files
+
+now we can see git status
+
+
+2) commit : it is the record of change
+ 
+       git commit -m "some message"
+
+- commit is record, if we add feature or bud write this in some message 
+
+ex : git commit -m "added index file and did changes in readme file"
+       
+now it is not showing in git then we need to push to files into git
+--------------------------------------------------------------------
+
+push : upload local repo content to remote repo
+
+          git push origin main
+
+
+add new file,modigy file etc we can do till now if need to create project on our local machine then...
+
+----------------------------------------------------------------
+
+init Command
+-----------------
+
+init : used to create a new git repository  (if have new project and we want do initiate with git then use init)
+
+
+mkdir command: make new directory
+--------------
+   mkdir localrepo  ==> directory name
+   cd localrepo
+    ls -a
+    git init
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+</body>
+</html>
